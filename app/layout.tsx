@@ -15,14 +15,14 @@ export const metadata: Metadata = {
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <ClientProviders>
-    <html lang='en'>
-      <body className={inter.className}>
-        <ThemeProvider attribute='class' defaultTheme='system' enableSystem disableTransitionOnChange>
-          <Header />
-          {children}
-        </ThemeProvider>
-      </body>
-    </html>
+      <html lang='en'>
+        <body className={inter.className}>
+          <ThemeProvider attribute='class' defaultTheme='system' enableSystem disableTransitionOnChange>
+            <Header />
+            {children}
+          </ThemeProvider>
+        </body>
+      </html>
     </ClientProviders>
   );
 }
